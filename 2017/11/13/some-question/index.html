@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/13/some-question/index.html">
 <meta property="og:site_name" content="YMR">
 <meta property="og:description" content="1. String&amp;#x548C;StringBuilder&amp;#x3001;StringBuffer&amp;#x7684;&amp;#x533A;&amp;#x522B;  String&amp;#x662F;&amp;#x53EA;&amp;#x8BFB;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#xFF0C;&amp;#x5F15;&amp;#x7528;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x662F;&amp;#x4E0D;&amp;#x80">
-<meta property="og:updated_time" content="2017-12-05T15:19:22.679Z">
+<meta property="og:updated_time" content="2017-12-07T14:22:53.625Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Some Questions">
 <meta name="twitter:description" content="1. String&amp;#x548C;StringBuilder&amp;#x3001;StringBuffer&amp;#x7684;&amp;#x533A;&amp;#x522B;  String&amp;#x662F;&amp;#x53EA;&amp;#x8BFB;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#xFF0C;&amp;#x5F15;&amp;#x7528;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x662F;&amp;#x4E0D;&amp;#x80">
@@ -105,7 +105,7 @@
     
     <a href="/index.html" class="item" >
         <i class="home icon"></i>
-        首页
+        HOME
     </a>
 
     
@@ -233,6 +233,68 @@
 <li>&#x4FEE;&#x9970;&#x53D8;&#x91CF;&#xFF1A;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x4E00;&#x6B21;&#x8D4B;&#x503C;&#xFF0C;&#x4EE5;&#x540E;&#x503C;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#xFF08;&#x5E38;&#x91CF;&#xFF09;</li>
 </ul>
 </blockquote>
+<h3 id="11-&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;"><a href="#11-&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;" class="headerlink" title="11.&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;"></a>11.&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">reverse</span><span class="params">(String originStr)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(originStr == <span class="keyword">null</span> || originStr.length() &lt;= <span class="number">1</span>){</span><br><span class="line">        <span class="keyword">return</span> originStr;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> reverse(originStr.substring(<span class="number">1</span>)) + originStr.charAt(<span class="number">0</span>);</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="12-Java8&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;API-&#x8BBE;&#x8BA1;&#x91C7;&#x7528;&#x4E0D;&#x53D8;&#x6A21;&#x5F0F;&#xFF0C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;"><a href="#12-Java8&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;API-&#x8BBE;&#x8BA1;&#x91C7;&#x7528;&#x4E0D;&#x53D8;&#x6A21;&#x5F0F;&#xFF0C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;" class="headerlink" title="12.Java8&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;API(&#x8BBE;&#x8BA1;&#x91C7;&#x7528;&#x4E0D;&#x53D8;&#x6A21;&#x5F0F;&#xFF0C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;)"></a>12.Java8&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;API(&#x8BBE;&#x8BA1;&#x91C7;&#x7528;&#x4E0D;&#x53D8;&#x6A21;&#x5F0F;&#xFF0C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;)</h3><blockquote>
+<ul class="ui list">
+<li>LocalDate</li>
+<li>LocalTime</li>
+<li>LocalDateTime</li>
+<li>Clock</li>
+<li>Instant</li>
+</ul>
+</blockquote>
+<h3 id="13-&#x6253;&#x5370;&#x6628;&#x5929;&#x7684;&#x5F53;&#x524D;&#x65F6;&#x523B;"><a href="#13-&#x6253;&#x5370;&#x6628;&#x5929;&#x7684;&#x5F53;&#x524D;&#x65F6;&#x523B;" class="headerlink" title="13.&#x6253;&#x5370;&#x6628;&#x5929;&#x7684;&#x5F53;&#x524D;&#x65F6;&#x523B;"></a>13.&#x6253;&#x5370;&#x6628;&#x5929;&#x7684;&#x5F53;&#x524D;&#x65F6;&#x523B;</h3><blockquote>
+<ul class="ui list">
+<li>&#x91C7;&#x7528;JAVA8&#x4E4B;&#x524D;&#x7684;API&#x5B9E;&#x73B0;&#x5982;&#x4E0B;</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Calendar;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">YesterdayCurrent</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>{</span><br><span class="line">        Calendar cal = Calendar.getInstance();</span><br><span class="line">        cal.add(Calendar.DATE, -<span class="number">1</span>);</span><br><span class="line">        System.out.println(cal.getTime());</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul class="ui list">
+<li>&#x91C7;&#x7528;JAVA8&#x7684;&#x65E5;&#x671F;API&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.time.LocalDateTime;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">YesterdayCurrent</span> </span>{</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>{</span><br><span class="line">        LocalDateTime today = LocalDateTime.now();</span><br><span class="line">        LocalDateTime yesterday = today.minusDays(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line">        System.out.println(yesterday);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="14-Java&#x548C;JavaScriprt"><a href="#14-Java&#x548C;JavaScriprt" class="headerlink" title="14.Java&#x548C;JavaScriprt"></a>14.Java&#x548C;JavaScriprt</h3><blockquote>
+<ul class="ui list">
+<li><p>JavaScript &#x4E0E;Java&#x662F;&#x4E24;&#x4E2A;&#x516C;&#x53F8;&#x5F00;&#x53D1;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x4E24;&#x4E2A;&#x4EA7;&#x54C1;&#x3002;Java &#x662F;&#x539F;Sun Microsystems&#x516C;&#x53F8;&#x63A8;&#x51FA;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#xFF0C;&#x7279;&#x522B;&#x9002;&#x5408;&#x4E8E;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#xFF1B;&#x800C;JavaScript&#x662F;Netscape&#x516C;&#x53F8;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x4E3A;&#x4E86;&#x6269;&#x5C55;Netscape&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x529F;&#x80FD;&#x800C;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x5D4C;&#x5165;Web&#x9875;&#x9762;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x548C;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#x89E3;&#x91CA;&#x6027;&#x8BED;&#x8A00;&#x3002;JavaScript&#x7684;&#x524D;&#x8EAB;&#x662F;LiveScript&#xFF1B;&#x800C;Java&#x7684;&#x524D;&#x8EAB;&#x662F;Oak&#x8BED;&#x8A00;&#x3002;</p>
+</li>
+<li><p>&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x548C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#xFF1A;Java&#x662F;&#x4E00;&#x79CD;&#x771F;&#x6B63;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x5F00;&#x53D1;&#x7B80;&#x5355;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5FC5;&#x987B;&#x8BBE;&#x8BA1;&#x5BF9;&#x8C61;&#xFF1B;JavaScript&#x662F;&#x79CD;&#x811A;&#x672C;&#x8BED;&#x8A00;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5236;&#x4F5C;&#x4E0E;&#x7F51;&#x7EDC;&#x65E0;&#x5173;&#x7684;&#xFF0C;&#x4E0E;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x4F5C;&#x7528;&#x7684;&#x590D;&#x6742;&#x8F6F;&#x4EF6;&#x3002;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#xFF08;Object-Based&#xFF09;&#x548C;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#xFF08;Event-Driven&#xFF09;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x56E0;&#x800C;&#x5B83;&#x672C;&#x8EAB;&#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x4E30;&#x5BCC;&#x7684;&#x5185;&#x90E8;&#x5BF9;&#x8C61;&#x4F9B;&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x4F7F;&#x7528;&#x3002;</p>
+</li>
+<li><p>&#x89E3;&#x91CA;&#x548C;&#x7F16;&#x8BD1;&#xFF1A;Java&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x5728;&#x6267;&#x884C;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x7F16;&#x8BD1;&#x3002;JavaScript&#x662F;&#x4E00;&#x79CD;&#x89E3;&#x91CA;&#x6027;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5176;&#x6E90;&#x4EE3;&#x7801;&#x4E0D;&#x9700;&#x7ECF;&#x8FC7;&#x7F16;&#x8BD1;&#xFF0C;&#x7531;&#x6D4F;&#x89C8;&#x5668;&#x89E3;&#x91CA;&#x6267;&#x884C;&#x3002;&#xFF08;&#x76EE;&#x524D;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x51E0;&#x4E4E;&#x90FD;&#x4F7F;&#x7528;&#x4E86;JIT&#xFF08;&#x5373;&#x65F6;&#x7F16;&#x8BD1;&#xFF09;&#x6280;&#x672F;&#x6765;&#x63D0;&#x5347;JavaScript&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF09;</p>
+</li>
+<li><p>&#x5F3A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x578B;&#x5F31;&#x53D8;&#x91CF;&#xFF1A;Java&#x91C7;&#x7528;&#x5F3A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x68C0;&#x67E5;&#xFF0C;&#x5373;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x5728;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x4F5C;&#x58F0;&#x660E;&#xFF1B;JavaScript&#x4E2D;&#x53D8;&#x91CF;&#x662F;&#x5F31;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x751A;&#x81F3;&#x5728;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x524D;&#x53EF;&#x4EE5;&#x4E0D;&#x4F5C;&#x58F0;&#x660E;&#xFF0C;JavaScript&#x7684;&#x89E3;&#x91CA;&#x5668;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x68C0;&#x67E5;&#x63A8;&#x65AD;&#x5176;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+</li>
+<li><p>&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#x4E0D;&#x4E00;&#x6837;&#x3002;</p>
+</li>
+<li><p>Java&#x548C;JavaScript&#x6700;&#x91CD;&#x8981;&#x7684;&#x533A;&#x522B;&#x662F;&#x4E00;&#x4E2A;&#x662F;&#x9759;&#x6001;&#x8BED;&#x8A00;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x52A8;&#x6001;&#x8BED;&#x8A00;&#x3002;</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="15-&#x65AD;&#x8A00;&#xFF08;assert&#xFF09;"><a href="#15-&#x65AD;&#x8A00;&#xFF08;assert&#xFF09;" class="headerlink" title="15.&#x65AD;&#x8A00;&#xFF08;assert&#xFF09;"></a>15.&#x65AD;&#x8A00;&#xFF08;assert&#xFF09;</h3><blockquote>
+<ul class="ui list">
+<li>&#x65AD;&#x8A00;&#x5728;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x662F;&#x4E00;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x8C03;&#x8BD5;&#x65B9;&#x5F0F;&#xFF0C;&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#x4E2D;&#x90FD;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x65AD;&#x8A00;&#x7528;&#x4E8E;&#x4FDD;&#x8BC1;&#x7A0B;&#x5E8F;&#x6700;&#x57FA;&#x672C;&#x3001;&#x5173;&#x952E;&#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;&#x65AD;&#x8A00;&#x68C0;&#x67E5;&#x901A;&#x5E38;&#x5728;&#x5F00;&#x53D1;&#x548C;&#x6D4B;&#x8BD5;&#x65F6;&#x5F00;&#x542F;&#x3002;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x6548;&#x7387;&#xFF0C;&#x5728;&#x8F6F;&#x7532;&#x53D1;&#x5E03;&#x540E;&#x65AD;&#x8A00;&#x68C0;&#x67E5;&#x901A;&#x5E38;&#x662F;&#x5173;&#x95ED;&#x7684;&#x3002;&#x65AD;&#x8A00;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5E03;&#x5C14;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x65F6;&#x5047;&#x5B9A;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;true&#xFF1B;&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;false&#xFF0C;&#x90A3;&#x4E48;&#x7CFB;&#x7EDF;&#x4F1A;&#x62A5;&#x544A;&#x4E00;&#x4E2A;AssertionError&#x3002;&#x65AD;&#x8A00;&#x7684;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span>(a &gt; <span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul class="ui list">
+<li><p>&#x65AD;&#x8A00;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;<br>assert Expression1;<br>assert Expression1 : Expression2 ;<br>Expression1 &#x5E94;&#x8BE5;&#x603B;&#x662F;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x3002;<br>Expression2 &#x53EF;&#x4EE5;&#x662F;&#x5F97;&#x51FA;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x4EFB;&#x610F;&#x8868;&#x8FBE;&#x5F0F;&#xFF1B;&#x8FD9;&#x4E2A;&#x503C;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x663E;&#x793A;&#x66F4;&#x591A;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6D88;&#x606F;&#x3002;</p>
+</li>
+<li><p>&#x8981;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x542F;&#x7528;&#x65AD;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x542F;&#x52A8;JVM&#x65F6;&#x4F7F;&#x7528;-enableassertions&#x6216;&#x8005;-ea&#x6807;&#x8BB0;&#x3002;&#x8981;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x9009;&#x62E9;&#x7981;&#x7528;&#x65AD;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x542F;&#x52A8;JVM&#x65F6;&#x4F7F;&#x7528;-da&#x6216;&#x8005;-disableassertions&#x6807;&#x8BB0;&#x3002;&#x8981;&#x5728;&#x7CFB;&#x7EDF;&#x7C7B;&#x4E2D;&#x542F;&#x7528;&#x6216;&#x7981;&#x7528;&#x65AD;&#x8A00;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;-esa&#x6216;-dsa&#x6807;&#x8BB0;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x5305;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x542F;&#x7528;&#x6216;&#x8005;&#x7981;&#x7528;&#x65AD;&#x8A00;&#x3002;</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="16-final&#x3001;finally&#x3001;finalize&#x7684;&#x533A;&#x522B;"><a href="#16-final&#x3001;finally&#x3001;finalize&#x7684;&#x533A;&#x522B;" class="headerlink" title="16.final&#x3001;finally&#x3001;finalize&#x7684;&#x533A;&#x522B;"></a>16.final&#x3001;finally&#x3001;finalize&#x7684;&#x533A;&#x522B;</h3><blockquote>
+<ul class="ui list">
+<li><p>final&#xFF1A;&#x4FEE;&#x9970;&#x7B26;&#xFF08;&#x5173;&#x952E;&#x5B57;&#xFF09;&#x6709;&#x4E09;&#x79CD;&#x7528;&#x6CD5;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x88AB;&#x58F0;&#x660E;&#x4E3A;final&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4E0D;&#x80FD;&#x518D;&#x6D3E;&#x751F;&#x51FA;&#x65B0;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x5373;&#x4E0D;&#x80FD;&#x88AB;&#x7EE7;&#x627F;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x548C;abstract&#x662F;&#x53CD;&#x4E49;&#x8BCD;&#x3002;&#x5C06;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E3A;final&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5B83;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x4E2D;&#x4E0D;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x88AB;&#x58F0;&#x660E;&#x4E3A;final&#x7684;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x5728;&#x58F0;&#x660E;&#x65F6;&#x7ED9;&#x5B9A;&#x521D;&#x503C;&#xFF0C;&#x800C;&#x5728;&#x4EE5;&#x540E;&#x7684;&#x5F15;&#x7528;&#x4E2D;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x3002;&#x88AB;&#x58F0;&#x660E;&#x4E3A;final&#x7684;&#x65B9;&#x6CD5;&#x4E5F;&#x540C;&#x6837;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x88AB;&#x91CD;&#x5199;&#x3002;</p>
+</li>
+<li><p>finally&#xFF1A;&#x901A;&#x5E38;&#x653E;&#x5728;try&#x2026;catch&#x2026;&#x7684;&#x540E;&#x9762;&#x6784;&#x9020;&#x603B;&#x662F;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x7A0B;&#x5E8F;&#x65E0;&#x8BBA;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x8FD8;&#x662F;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x53EA;&#x8981;JVM&#x4E0D;&#x5173;&#x95ED;&#x90FD;&#x80FD;&#x6267;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x91CA;&#x653E;&#x5916;&#x90E8;&#x8D44;&#x6E90;&#x7684;&#x4EE3;&#x7801;&#x5199;&#x5728;finally&#x5757;&#x4E2D;&#x3002;</p>
+</li>
+<li><p>finalize&#xFF1A;Object&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;Java&#x4E2D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;finalize()&#x65B9;&#x6CD5;&#x5728;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x5C06;&#x5BF9;&#x8C61;&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x6E05;&#x9664;&#x51FA;&#x53BB;&#x4E4B;&#x524D;&#x505A;&#x5FC5;&#x8981;&#x7684;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x7531;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x5728;&#x9500;&#x6BC1;&#x5BF9;&#x8C61;&#x65F6;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x91CD;&#x5199;finalize()&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6574;&#x7406;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x6216;&#x8005;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;&#x3002;</p>
+</li>
+</ul>
+</blockquote>
 
                         
                     </div>
@@ -260,7 +322,7 @@
             <div class="column nav-left">
                 
 
-                <a class="ui tiny button disabled"><i class="angle left icon"></i>前一篇</a>
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>Previous</a>
 
                 
             </div>
@@ -286,7 +348,7 @@
 
                 <div class="ui sticky article-toc" id="article-toc">
                     <!-- toc -->
-                    <ol class="ui ordered list"><li><a href="#1-String和StringBuilder、StringBuffer的区别"><span>1. String和StringBuilder、StringBuffer的区别</span></a></li><li><a href="#2-描述下JVM加载CLASS文件的原理机制"><span>2.描述下JVM加载CLASS文件的原理机制</span></a><ol><li><a href="#2-1类加载器说明"><span>2.1类加载器说明</span></a></li></ol></li><li><a href="#3-char型变量中能不能存储一个中文汉字，为什么？"><span>3.char型变量中能不能存储一个中文汉字，为什么？</span></a></li><li><a href="#4-静态嵌套类和内部类的区别"><span>4.静态嵌套类和内部类的区别</span></a></li><li><a href="#5-Java中内存泄漏案例"><span>5.Java中内存泄漏案例</span></a></li><li><a href="#6-抽象的（Abstract）方法是否可同时是静态的（Static），是否可同时是本地方法（Native），是否可同时被synchronized修饰？"><span>6.抽象的（Abstract）方法是否可同时是静态的（Static），是否可同时是本地方法（Native），是否可同时被synchronized修饰？</span></a></li><li><a href="#7-静态变量和实例变量的区别"><span>7.静态变量和实例变量的区别</span></a></li><li><a href="#8-实现对象克隆的两种方式"><span>8.实现对象克隆的两种方式</span></a></li><li><a href="#9-与垃圾回收相关的JVM参数"><span>9.与垃圾回收相关的JVM参数</span></a></li><li><a href="#10-Java中的final关键字用法"><span>10.Java中的final关键字用法</span></a></li></ol>
+                    <ol class="ui ordered list"><li><a href="#1-String和StringBuilder、StringBuffer的区别"><span>1. String和StringBuilder、StringBuffer的区别</span></a></li><li><a href="#2-描述下JVM加载CLASS文件的原理机制"><span>2.描述下JVM加载CLASS文件的原理机制</span></a><ol><li><a href="#2-1类加载器说明"><span>2.1类加载器说明</span></a></li></ol></li><li><a href="#3-char型变量中能不能存储一个中文汉字，为什么？"><span>3.char型变量中能不能存储一个中文汉字，为什么？</span></a></li><li><a href="#4-静态嵌套类和内部类的区别"><span>4.静态嵌套类和内部类的区别</span></a></li><li><a href="#5-Java中内存泄漏案例"><span>5.Java中内存泄漏案例</span></a></li><li><a href="#6-抽象的（Abstract）方法是否可同时是静态的（Static），是否可同时是本地方法（Native），是否可同时被synchronized修饰？"><span>6.抽象的（Abstract）方法是否可同时是静态的（Static），是否可同时是本地方法（Native），是否可同时被synchronized修饰？</span></a></li><li><a href="#7-静态变量和实例变量的区别"><span>7.静态变量和实例变量的区别</span></a></li><li><a href="#8-实现对象克隆的两种方式"><span>8.实现对象克隆的两种方式</span></a></li><li><a href="#9-与垃圾回收相关的JVM参数"><span>9.与垃圾回收相关的JVM参数</span></a></li><li><a href="#10-Java中的final关键字用法"><span>10.Java中的final关键字用法</span></a></li><li><a href="#11-使用递归实现字符串反转"><span>11.使用递归实现字符串反转</span></a></li><li><a href="#12-Java8中的时间日期API-设计采用不变模式，线程安全"><span>12.Java8中的时间日期API(设计采用不变模式，线程安全)</span></a></li><li><a href="#13-打印昨天的当前时刻"><span>13.打印昨天的当前时刻</span></a></li><li><a href="#14-Java和JavaScriprt"><span>14.Java和JavaScriprt</span></a></li><li><a href="#15-断言（assert）"><span>15.断言（assert）</span></a></li><li><a href="#16-final、finally、finalize的区别"><span>16.final、finally、finalize的区别</span></a></li></ol>
                 </div>
 
             </div>
@@ -304,7 +366,7 @@
         <div class="ui vertical footer segment">
     <div class="ui center aligned container">
         <div class="ui inverted section divider"></div>
-        &copy; 2017 <a href="/">LEO CHEN</a>,
+        &copy; 2018 <a href="/">LEO CHEN</a>,
         Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
                 href="http://hexo.io/" target="_blank">Hexo</a>.
     </div>
